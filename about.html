@@ -7,6 +7,20 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f2f5;
+            min-height: 100vh;
+            padding: 0;
+            margin: 0;
+        }
+
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
@@ -21,33 +35,39 @@
             border-radius: 8px !important;
             font-weight: 600 !important;
         }
+        .nav-container {
+            background: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
     </style>
 </head>
 <body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen">
     <!-- Header -->
     <header class="gradient-bg text-white">
         <div class="container mx-auto px-4 py-6">
-        	<table style="width: auto; margin: 0; padding: 0;">
-        		<tr>
-        			<td><img border="0" src="Logo.png" width="130px" height="auto" style="padding: 20px"></td>
-        			<td><h1 class="text-4xl font-bold">Yugantar 2025</h1>
-        					<p class="text-md text-blue-200">Registration Management System</p>
-        			</td>
-        		</tr>
-        	</table>
-            
+		<div><img border="0" src="Logo.png" width="30%" height="auto"></div>            
         </div>
     </header>
-	<div class="row">
-		<table>
-			<tr><td style="padding: 20px;"><a href="index.html"><b>Home</b></a></td><td style="padding: 20px;"><a href="about.html"><b>About</b></td><td style="padding: 20px;"><a href="team.html"><b>Team</b></td></tr>
-		</table>
-	</div>
 
+    <!-- Navigation -->
+    <div class="nav-container" style=" text-align: justify;">
+        <table style=" text-align: left;">
+            <tr>
+                <td style="padding: 20px;"><a href="index.html"><b>Home</b></a></td>
+                <td style="padding: 20px;"><a href="about.html"><b>About</b></a></td>
+                <td style="padding: 20px;"><a href="team.html"><b>Team</b></a></td>
+                <td style="padding: 20px;"><a href="project-overview.html"><b>Project Overview</b></a></td>
+                <td style="padding: 20px;"><a href="enquiry.html"><b>Enquire Us</b></a></td>
+            </tr>
+        </table>
+    </div>
+	
 
     <div class="container mx-auto px-4 py-8">
     	<h1 align="center" class="font-semibold text-lg text-blue-900 mb-4" style="font-size: 200%;">YUGANTAR – Igniting Minds, Inspiring Change</h1><br /><br />
-	<img src="about.jpg" style="float:right; width: 50%; height: auto; padding: 5%;">
+			<img src="about.jpg" style="float:right; width: 50%; height: auto; padding: 5%;">
     	<h2><span style="font-weight: 500">Attendee Guidelines – Read This Before the Fun Begins!</span></h2>
     	<p>Your Entry Pass Is Ready!</p><br />
     	<p>All registered students — check your inbox!<br />
@@ -101,21 +121,14 @@
         
     </div>
 
-        <!-- Footer -->
+    <!-- Footer -->
     <footer class="gradient-bg text-white py-6 mt-8">
-        <center><table style="text-align: center;">
-		<tr style="text-align: center;"><td width="30%"><img border="0" src="Logo-CA.png" width="130px" height="auto" style="text-align: center"></td>
-                <td><p class="text-xl font-bold">Professional Event 2025</p></td></tr>
-		<tr><td colspan="2"><p class="text-blue-200 text-sm justify-center"><p>SCF-53, National Bank, Ist Floor, Garha Road, Phase-1, Jalandhar<br />nicasajalandhar@gmail.com
-</p></td></tr>
-		</table>
-
-<div class="container text-center">
-            <div class="flex justify-center items-center mb-4">
-                
-            </div>
-            </center>
-        </div>
+	<div align="center"><img border="0" src="Logo-CA.png" width="20%" height="auto" style="text-align: center"></div>
+        <center>
+	    <table style="text-align: center;">
+		<tr><td><p class="text-sm justify-center"><p>SCF-53, National Bank, Ist Floor, Garha Road, Phase-1, Jalandhar<br />nicasajalandhar@gmail.com</p></td></tr>
+	    </table>
+        </center>
     </footer>
 
 </body>

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yugantar 2025 - Project Overview</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f2f5;
+            min-height: 100vh;
+            padding: 0;
+            margin: 0;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in { animation: fadeIn 0.5s ease-out; }
+        .gradient-bg { background: linear-gradient(135deg, #1e3a8a 0%, #4c1d95 100%); }
+        #qr-reader { width: 100%; }
+        #qr-reader__dashboard_section_csr button {
+            background: #2563eb !important;
+            color: white !important;
+            padding: 12px 24px !important;
+            border-radius: 8px !important;
+            font-weight: 600 !important;
+        }
+        .nav-container {
+          background: white;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          margin-bottom: 30px;
+        }
+
+				/* Ordered List (numbered list) */
+				ol.n-list {
+				    list-style-type: decimal;
+				    list-style-position: outside;
+				    margin-left: 30px;
+				    padding-left: 10px;
+				    text-align: justify;
+				}
+				
+				ol.n-list li {
+						position: relative; 
+				    padding-left: 10px;
+				}
+
+				/* Unordered List (bullet list inside an <li>) */
+				ul.list {
+				    list-style: none;          /* removes default bullet */
+				    margin-left: 0px;         /* indentation from parent li */
+				    padding-left: 0;
+				    text-align: justify;
+				}
+				
+				/* Custom bullet for UL items */
+				ul.list li {
+				    position: relative;
+				    padding-left: 18px;         /* spacing for bullet */
+				}
+				
+				ul.list li::before {
+				    content: "◉";               /* custom bullet */
+				    font-size: 18px;
+				    color: #1E3A8A;             /* your blue bullet */
+				    font-family: Arial;
+				    position: absolute;
+				    left: -5px;
+				    top: 4px;
+				    line-height: 1;
+				}
+
+				ul.list ul li::before {
+				    content: "◆";               /* custom bullet */
+				    font-size: 16px;
+				    color: #1E3A8A;             /* your blue bullet */
+				    font-family: Arial;
+				    position: absolute;
+				    left: 0;
+				    top: 5px;
+				    line-height: 1;
+				}
+				
+				.myText {
+    			font-family: 'Courier New', monospace;
+  			}
+  			
+  			.myTable { margin-top: 20px; }
+  			.myTable td { padding: 2px 20px; border: 1px solid #1E3A8A; }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen">
+    <!-- Header -->
+    <header class="gradient-bg text-white">
+        <div class="container mx-auto px-4 py-6">
+		<div><img border="0" src="Logo.png" width="30%" height="auto"></div>            
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <div class="nav-container" style=" text-align: justify;">
+        <table style=" text-align: left;">
+            <tr>
+                <td style="padding: 20px;"><a href="index.html"><b>Home</b></a></td>
+                <td style="padding: 20px;"><a href="about.html"><b>About</b></a></td>
+                <td style="padding: 20px;"><a href="team.html"><b>Team</b></a></td>
+                <td style="padding: 20px;"><a href="project-overview.html"><b>Project Overview</b></a></td>
+                <td style="padding: 20px;"><a href="enquiry.html"><b>Enquire Us</b></a></td>
+            </tr>
+        </table>
+    </div>
+    	
+    <div class="container mx-auto px-4 py-8">
+    	<h1 align="center" class="font-semibold text-lg text-blue-900 mb-4" style="font-size: 200%;">YUGANTAR – Igniting Minds, Inspiring Change</h1><br /><br />
+			<h2 class="font-semibold text-lg text-blue-900 mb-4" style="font-size: 150%; margin-bottom: -20px; padding: 0px;">1. Project Overview</h2> <br>
+			<img src="project-overview.jpg" width="50%" style="float: right; padding: 20px; border-radius: 30px;">
+			<b>The QR-Based Event Registration &amp; Attendance Management System</b> is 
+			designed to streamline and automate the complete registration and 
+			attendance workflow for Yugantar 2025, a two-day ICAI student 
+			mega-conference. <br>
+			<br>
+			The system integrates multiple platforms and technologies:
+			<ul class="list" style="margin-left: 20px;">
+	    	<li><b>Google Sheets</b> – Central database </li>
+				<li><b>Google Apps Script</b> – Backend automation </li>
+				<li><b>QuickChart QR API</b> – QR generation </li>
+				<li><b>GmailApp</b> – Automated email dispatch </li>
+				<li><b>HTML/CSS/JS</b> – Web dashboard </li>
+				<li><b>GitHub Pages</b> – Hosting </li>
+				<li><b>AI Tools</b> – Code optimization &amp; debugging </li>
+			</ul>
+			<br>
+			The solution eliminates manual errors, reduces workload, and ensures 
+			real-time, reliable tracking of every attendee across venue, bus, lunch, 
+			and kit distribution checkpoints. <br>
+			<br>
+			<h2 class="font-semibold text-lg text-blue-900 mb-4" style="font-size: 150%; margin-bottom: 10px; padding: 0px;">2. Objectives </h2></p>
+			<ol class="n-list">
+				<li>Create a <b>fully automated registration workflow</b> </li>
+				<li>Generate <b>unique QR codes</b> for every registered student </li>
+				<li>Automate <b>email confirmations with embedded QR images</b> </li>
+				<li>Create a <b>committee dashboard</b> for real-time statistics </li>
+				<li>Enable <b>QR scanning for</b>:
+					<ul class="list">
+						<li>15 Nov Venue Entry </li>
+						<li>15 Nov Bus Entry </li>
+						<li>15 Nov Lunch </li>
+						<li>16 Nov Venue Entry </li>
+						<li>16 Nov Bus Entry </li>
+						<li>16 Nov Lunch </li>
+						<li>Kit Distribution </li>	
+					</ul>
+				</li>	
+				<li>Implement <b>on-spot registration</b> &amp; instant QR issuance</li>
+				<li>Provide <b>secure admin access</b> via password-based login </li>
+				<li>Ensure smooth deployment via <b>GitHub + Apps Script WebApp</b></li>
+			</ol>
+		</p><br>
+		<h2 class="font-semibold text-lg text-blue-900 mb-4" style="font-size: 150%; margin-bottom: 10px; padding: 0px;">3. System Architecture</h2> 
+		<h3><span style="font-weight: 700">Frontend</span></h3>
+		<ul class="list" style="margin-left: 20px;">
+			<li>GitHub Pages + HTML Dashboard </li> 
+			<li>Google Sites (for embedding the WebApp)</li>  
+		</ul>
+		<h3><span style="font-weight: 700">Backend (Apps Script) </span></h3>
+		<ul class="list" style="margin-left: 20px;">
+			<li>Setup sheet </li>
+			<li>QR code generator </li>
+			<li>Email sender </li>
+			<li>QR scanner handler </li>
+			<li>Statistics provider </li>
+			<li>On-spot registration processor </li>
+			<li>Enquiry form handler </li>
+		</ul>
+		<h3><span style="font-weight: 700">Database</h3> 
+		<ul class="list" style="margin-left: 20px;">
+			<li>Google Sheet: <b>FINAL REG</b> </li>
+			<li>Additional sheet: <b>Enquiries</b> 
+		</ul>
+		<h3><span style="font-weight: 700">External Integrations</span></h3>
+		<ul class="list" style="margin-left: 20px;">
+			<li>QuickChart API (Static PNG QR Code Generator)</li>
+		</ul>	
+		</p>
+
+    <h2 class="font-semibold text-lg text-blue-900 mb-4" style="font-size: 150%; margin: 20px 0 -20px 0; padding: 0px;">4. Detailed Workflow</h2><br>
+<h1 align="center" class="font-semibold text-lg text-blue-900 mb-4" style="font-size: 200%;">YUGANTAR – Igniting Minds, Inspiring Change</h1><br /><br />
+			<h2 class="font-semibold text-lg text-blue-900 mb-4" style="font-size: 150%; margin-bottom: -20px; padding: 0px;">1. Project Overview</h2> <br>
+			<img src="workflow.jpg" width="50%" style="float: right; padding: 20px; border-radius: 30px;">
+
+		<h3><span style="font-weight: 700">Step 1 — Data Collection</h3>
+		<p>All registration data is collected via Google Form and automatically stored inside <b>FINAL REG</b> sheet. 
+
+		<h3 style=" margin-top: 20px;"><span style="font-weight: 700;">Step 2 — Sheet Initialization </span></h3>
+		<p>The <span class="myText">setupSheet()</span> function creates headers, formatting, and sets required column widths:
+			<ul class="list" style="margin-left: 20px;">
+				<li>Student Name</li>
+				<li>NRO</li>
+				<li>Mobile</li>
+				<li>Email</li>
+				<li>QR Code</li>
+				<li>Email Sent?</li>
+				<li>Day-wise scan status (Venue, Bus, Lunch)</li>
+				<li>Kits Distribution</li>
+				<li>Timestamp </li>
+			</ul>
+		</p>
+
+		<h3 style=" margin-top: 20px;"><span style="font-weight: 700">Step 3 — QR Code Automation </span></h3>
+		<p>The <span class="myText">generateQRCodes()</span> function:
+			<ul class="list" style="margin-left: 20px;">
+				<li>Converts student data into a JSON payload</li>
+				<li>Generates a scannable QuickChart QR URL</li>
+				<li>Inserts QR image directly into the sheet</li>
+				<li>Ensures no duplication</li>
+			</ul>		 
+		</p>
+		
+		<h3 style=" margin-top: 20px;"><span style="font-weight: 700">Step 4 — Personalized Email System </span></h3>
+		<p>The <span class="myText">sendInvitationEmails()</span> function:
+			<ul class="list" style="margin-left: 20px;">
+				<li>Generates a high-quality 500px QR image</li>
+				<li>Attaches QR as inline email image</li>
+				<li>Sends a professionally designed HTML email</li>
+				<li>Updates the “Email Sent?” status</li>
+			</ul>		 
+		</p>
+
+		<h3 style=" margin-top: 20px;"><span style="font-weight: 700">Step 5 — QR Scanning System </span></h3>
+		<p>The scanning module <span class="myText">(handleQRScan())</span>:
+			<ul class="list" style="margin-left: 20px;">
+				<li>Decodes QR JSON</li>
+				<li>Matches NRO in sheet</li>
+				<li>Updates respective entry column</li>
+				<li>Prevents double scanning</li>
+				<li>Returns formatted response for the dashboard UI</li>
+			</ul>		 
+		</p>
+
+		<h3 style=" margin-top: 20px;"><span style="font-weight: 700">Step 6 — On-Spot Registration </span></h3>
+		<p><span class="myText">registerOnSpot():</span>
+			<ul class="list" style="margin-left: 20px;">
+				<li>Validates NRO</li>
+				<li>Creates new entries instantly</li>
+				<li>Generates QR & inserts into sheet</li>
+				<li>Sends successful registration response</li>
+			</ul>		 
+		</p>
+
+		<h3 style=" margin-top: 20px;"><span style="font-weight: 700">Step 7 — Statistics & Monitoring </span></h3>
+		<p><span class="myText">getStats():</span>
+			<ul class="list" style="margin-left: 20px;">
+				<li>Computes real-time totals
+				<li>Day-wise attendance
+				<li>Bus entries
+				<li>Lunch count
+				<li>Kits distributed</li>
+			</ul>		 
+		</p>
+
+		<h3 style=" margin-top: 20px;"><span style="font-weight: 700">Step 8 — Dashboard Integration </span></h3>
+		<p>Stats + QR scanning endpoints power the frontend dashboard hosted on GitHub or Google Sites. </p>
+
+
+    <h2 class="font-semibold text-lg text-blue-900 mb-4" style="font-size: 150%; margin: 20px 0 0 0; padding: 0px;">5. Testing & Validation</h2>
+		<p>Extensive tests were conducted:
+		<table class="myTable">
+			<tr style="background-color: #1E3A8A; color: white;">
+				<td><b>Test Type</b></td>
+				<td><b>Result</b></td>
+			</tr>
+			<tr>
+				<td>QR readability (mobile scanners)</td>
+				<td>Passed</td>
+			</tr>
+			<tr>
+				<td>JSON QR payload validation</td>
+				<td>Passed</td>
+			</tr>
+			<tr>
+				<td>Mass email dispatch (GmailApp)</td>
+				<td>Passed</td>
+			</tr>
+			<tr>
+				<td>On-spot registration</td>
+				<td>Passed</td>
+			</tr>
+			<tr>
+				<td>GitHub hosting &amp; deployment</td>
+				<td>Passed</td>
+			</tr>
+			<tr>
+				<td>Cross-browser compatibility</td>
+				<td>Passed</td>
+			</tr>
+			<tr>
+				<td>Double-scan prevention</td>
+				<td>Passed
+				</td>
+			</tr>
+		</table>
+
+
+    <h2 class="font-semibold text-lg text-blue-900 mb-4" style="font-size: 150%; margin: 20px 0 0 0; padding: 0px;">6. Challenges & Solutions</h2>
+		<p>Extensive tests were conducted:
+		<table class="myTable">
+			<tr style="background-color: #1E3A8A; color: white;">
+				<td><b>Challenge</b></td>
+				<td><b>Solution</b></td>
+			</tr>
+			<tr>
+				<td>QR images not readable </td>
+				<td>Switched to high-quality PNG using QuickChart</td>
+			</tr>
+			<tr>
+				<td>QR JSON breaking in scanning </td>
+				<td>Converted to compact JSON </td>
+			</tr>
+			<tr>
+				<td>Image not appearing in sheet</td>
+				<td>Replaced formula-based QR with CellImage() </td>
+			</tr>
+			<tr>
+				<td>Dashboard caching issues</td>
+				<td>Added real-time API-based data pulling</td>
+			</tr>
+			<tr>
+				<td>Duplicate function definitions</td>
+				<td>Reorganized & cleaned script structure </td>
+			</tr>
+			<tr>
+				<td>AI-generated code inconsistencies</td>
+				<td>Manual debugging + restructuring</td>
+			</tr>
+		</table>
+		
+		
+    <h2 class="font-semibold text-lg text-blue-900 mb-4" style="font-size: 150%; margin: 20px 0 -20px 0; padding: 0px;">7. Acknowledgments</h2><br>
+		<p>Special thanks to:
+			<ul class="list" style="margin-left: 20px;">
+				<li><b>ICAI Jalandhar Branch of NIRC</b> for organizing the AI AURA Workshop</li>
+				<li><b>Branch Chairman</b>: CA Puneet Oberoi</li>
+				<li><b>Workshop Faculties</b>:
+					<ul class="list">
+						<li>CA Mohit Gaba</li>
+						<li>CA Dimple Bhatia</li>
+						<li>CA Gaurav Chabbra</li>
+						<li>CA Bhanu Dhir</li>
+					</ul>
+				</li>		
+				<li><b>Project Team Members:</b><br /> 
+						Kartik, Eknoor, Harkirat, Ishita, Gulika, Nikhil, Aman</li>
+				<li><b>AI Tools Used</b>:
+					<ul class="list">
+						<li>Claude AI <i>(Code generation & debugging)</i></li>
+						<li>ChatGPT <i>(System architecture, documentation, debugging)</i></li>
+						<li>Gemini <i>(Research & optimization support)</i></li>
+					</ul>
+				</li>		
+			</ul>
+			
+    <h2 class="font-semibold text-lg text-blue-900 mb-4" style="font-size: 150%; margin: 20px 0 -20px 0; padding: 0px;">8. Repository & Resources </h2><br>
+			<ul class="list" style="margin-left: 20px;">
+				<li><b>GitHub Repository</b>: https://github.com/ekaur4005-wq/EVENT-REGISTRATION </li> 
+				<li><b>Documentation</b>: https://docs.google.com/spreadsheets/d/1LhFAbJWlapHOpq13jDyEF3DL6pT7I_BlyXxryIt_kC0/edit?gid=0#gid=0 </li> 
+				<li><b>Contact</b>: Eknoor Kaur / ekaur4005@gmail.com </li> 
+			</ul>
+
+    <h2 class="font-semibold text-lg text-blue-900 mb-4" style="font-size: 150%; margin: 20px 0 -20px 0; padding: 0px;">9. Conclusion </h2><br>
+		<b>The QR-Based Event Registration &amp; Attendance Management System</b> 
+		successfully automated the entire event workflow for Yugantar 2025. <br>
+		It reduced manual workload, improved accuracy, and delivered a smooth 
+		entry management experience for thousands of students. <br>
+		<br>
+		This project stands as a benchmark for tech-integrated ICAI events, 
+		demonstrating the power of <b>Apps Script automation + Web dashboards + 
+		AI-assisted development</b>.<br />
+		<br /><br />
+    </p>
+    
+        
+    </div>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-6 mt-8">
+	<div align="center"><img border="0" src="Logo-CA.png" width="20%" height="auto" style="text-align: center"></div>
+        <center>
+	    <table style="text-align: center;">
+		<tr><td><p class="text-sm justify-center"><p>SCF-53, National Bank, Ist Floor, Garha Road, Phase-1, Jalandhar<br />nicasajalandhar@gmail.com</p></td></tr>
+	    </table>
+        </center>
+    </footer>
+
+</body>
+</html>

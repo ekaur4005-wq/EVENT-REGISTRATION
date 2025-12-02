@@ -21,6 +21,38 @@
             border-radius: 8px !important;
             font-weight: 600 !important;
         }
+
+
+.my-menu table, 
+.my-menu td, 
+.my-menu a {
+    all: unset;
+    display: revert;
+}
+
+.my-menu table {
+    border-collapse: collapse;
+}
+
+.my-menu td {
+    padding: 20px !important;
+}
+
+.my-menu a {
+    cursor: pointer;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-container {
+            background: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+
+
 @keyframes scroll {
     0% { transform: translateY(0); }
     100% { transform: translateY(-50%); }
@@ -37,35 +69,39 @@
 </head>
 <body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen">
     <!-- Header -->
-    <header class="gradient-bg text-white shadow-2xl">
+    <header class="gradient-bg text-white shadow-2xl" style="margin: -20px 0;">
         <div class="container mx-auto px-4 py-6">
             <div class="flex items-center justify-between">
-                        	<table style="width: auto; margin: 0; padding: 0;">
-        		<tr>
-        			<td><img border="0" src="Logo.png" width="130px" height="auto" style="padding: 20px"></td>
-        			<td><h1 class="text-4xl font-bold">Yugantar 2025</h1>
-        					<p class="text-md text-blue-200">Registration Management System</p>
-        			</td>
-        		</tr>
-        	</table>
+                        	        <div class="container mx-auto px-4 py-6">
+		<div><img border="0" src="Logo.png" width="30%" height="auto"></div>            
+        </div>
+
 
                 <div class="flex flex-col items-end space-y-2">
                     <div id="updateIndicator">
                         <span class="text-blue-200 text-sm">● Live</span>
                     </div>
                     <button id="authBtn" onclick="toggleAuth()" class="bg-white text-blue-900 px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-50 transition">
-                        Committee Login
+                        <nobr>Committee Login</nobr>
                     </button>
                     <p id="lastRefreshTime" class="text-xs text-blue-300"></p>
                 </div>
             </div>
         </div>
     </header>
-	<div class="row">
-		<table>
-			<tr><td style="padding: 20px;"><a href="index.html"><b>Home</b></a></td><td style="padding: 20px;"><a href="about.html"><b>About</b></td><td style="padding: 20px;"><a href="team.html"><b>Team</b></td></tr>
-		</table>
-	</div>
+
+    <!-- Navigation -->
+    <div class="nav-container" style=" text-align: justify;">
+        <table style=" text-align: left;">
+            <tr>
+                <td style="padding: 20px;"><a href="index.html"><b>Home</b></a></td>
+                <td style="padding: 20px;"><a href="about.html"><b>About</b></a></td>
+                <td style="padding: 20px;"><a href="team.html"><b>Team</b></a></td>
+                <td style="padding: 20px;"><a href="project-overview.html"><b>Project Overview</b></a></td>
+                <td style="padding: 20px;"><a href="enquiry.html"><b>Enquire Us</b></a></td>
+            </tr>
+        </table>
+    </div>
 
     <div class="container mx-auto px-4 py-8">
         <!-- Public Dashboard (Always Visible) -->
@@ -272,19 +308,12 @@
 
     <!-- Footer -->
     <footer class="gradient-bg text-white py-6 mt-8">
-        <center><table style="text-align: center;">
-		<tr style="text-align: center;"><td width="30%"><img border="0" src="Logo-CA.png" width="130px" height="auto" style="text-align: center"></td>
-                <td><p class="text-xl font-bold">Professional Event 2025</p></td></tr>
-		<tr><td colspan="2"><p class="text-blue-200 text-sm justify-center"><p>SCF-53, National Bank, Ist Floor, Garha Road, Phase-1, Jalandhar<br />nicasajalandhar@gmail.com
-</p></td></tr>
-		</table>
-
-<div class="container text-center">
-            <div class="flex justify-center items-center mb-4">
-                
-            </div>
-            </center>
-        </div>
+	<div align="center"><img border="0" src="Logo-CA.png" width="20%" height="auto" style="text-align: center"></div>
+        <center>
+	    <table style="text-align: center;">
+		<tr><td><p class="text-sm justify-center"><p>SCF-53, National Bank, Ist Floor, Garha Road, Phase-1, Jalandhar<br />nicasajalandhar@gmail.com</p></td></tr>
+	    </table>
+        </center>
     </footer>
 
     <script>

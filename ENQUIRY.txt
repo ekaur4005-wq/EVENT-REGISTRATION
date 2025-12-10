@@ -267,8 +267,8 @@
         // EMAILJS CONFIGURATION - REPLACE THESE VALUES
         // ============================================
         const EMAILJS_CONFIG = {
-            publicKey: 'ub87mkBQktMqanvL5',      // Replace with your EmailJS Public Key
-            serviceID: 'service_tcf122k',      // Replace with your EmailJS Service ID
+            publicKey: '9AeiYSNoq8mK9Bx9q',      // Replace with your EmailJS Public Key
+            serviceID: 'service_wihc2g8',      // Replace with your EmailJS Service ID
             templateID: 'template_vvjikud'     // Replace with your EmailJS Template ID
         };
 
